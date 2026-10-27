@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Vocabulary | C1 Practice</title>
+<style>
+:root{--green:#08783f;--light:#eaf6ee;--ink:#202a24;--muted:#59665d;--line:#d5e3d9;--gold:#fff4d6;--red:#ffe8e6}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f5f8f5;line-height:1.5}
+header{background:linear-gradient(120deg,#086b38,#159653);color:#fff;padding:2rem 1.2rem}
+header .wrap,main{max-width:1100px;margin:auto}
+h1{margin:0 0 .3rem;font-size:clamp(1.8rem,4vw,2.7rem)}header p{margin:.2rem 0 0;max-width:760px}
+nav{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 1.5rem}
+nav a{color:#075f32;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.5rem .85rem;text-decoration:none;font-weight:700;font-size:.92rem}
+main{padding:1rem}
+.panel,.activity{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem;margin:1rem 0;box-shadow:0 3px 12px #173b2410}
+h2{color:var(--green);margin:.1rem 0 .4rem}h3{margin:.2rem 0 .7rem}
+.intro{color:var(--muted);margin-top:0}
+.study-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.study-card{border:1px solid var(--line);border-radius:10px;padding:1rem;background:#fbfdfb}
+.study-card h3{color:var(--green);border-bottom:2px solid var(--light);padding-bottom:.45rem}
+.study-card dl{margin:0}.study-card dt{font-weight:700;margin-top:.65rem}.study-card dd{margin:.1rem 0 0 .7rem;color:#4c5b50}
+.activity{scroll-margin-top:1rem}
+.activity-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;flex-wrap:wrap}
+.tag{background:var(--light);color:#075f32;padding:.25rem .55rem;border-radius:6px;font-size:.8rem;font-weight:700}
+.questions{display:grid;grid-template-columns:1fr;gap:.7rem;margin:1rem 0}
+.q{padding:.75rem;border:1px solid #e1e9e3;border-radius:9px;background:#fcfefc}
+.q label{display:block;font-weight:600;margin-bottom:.4rem}
+select,input[type=text]{width:100%;max-width:100%;padding:.65rem;border:1px solid #aebdb2;border-radius:7px;background:#fff;font:inherit}
+select:focus,input:focus{outline:2px solid #83c99c;outline-offset:1px}
+button{border:0;border-radius:8px;padding:.65rem 1rem;font:inherit;font-weight:700;cursor:pointer}
+.check{background:var(--green);color:white}.reset{background:#e9eee9;color:#26352a}
+.feedback{margin:.8rem 0 0;padding:.7rem .9rem;border-radius:8px;display:none;font-weight:700}
+.feedback.show{display:block}.feedback.good{background:var(--light);color:#075f32}.feedback.partial{background:var(--gold);color:#72510a}.feedback.bad{background:var(--red);color:#8a241d}
+.controls{display:flex;gap:.6rem;flex-wrap:wrap}
+.note{font-size:.92rem;color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:1.5rem}
+@media(min-width:760px){.questions.two-col{grid-template-columns:1fr 1fr}.q.wide{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Phrases with <em>get</em></h1>
+<p>C1 Vocabulary Practice · Study the expressions, idioms and phrasal verbs, then test your understanding in definitions and context.</p>
+</div></header>
+<main>
+<nav aria-label="Page sections">
+<a href="#study">Study bank</a><a href="#expressions-match">Expressions: meanings</a><a href="#expressions-context">Expressions: context</a><a href="#idioms-match">Idioms: meanings</a><a href="#idioms-context">Idioms: context</a><a href="#phrasal-match">Phrasal verbs: meanings</a><a href="#phrasal-context">Phrasal verbs: context</a>
+</nav>
+
+<section class="panel" id="study">
+<h2>1. Study bank</h2><p class="intro">Learn each expression with an English definition or synonym. Notice how the meaning of <em>get</em> changes depending on the words around it.</p>
+<div class="study-grid">
+<div class="study-card"><h3>Expressions with <em>get</em></h3><dl>
+<dt>get hold of someone</dt><dd>manage to contact or speak to someone.</dd>
+<dt>get into trouble with someone</dt><dd>cause a problem or get into a difficult situation with a person or authority.</dd>
+<dt>get out of the way</dt><dd>move so that you are no longer blocking someone or something.</dd>
+<dt>get your own back on someone</dt><dd>take revenge on someone who has treated you badly.</dd>
+<dt>get rid of something/someone</dt><dd>make something or someone unwanted go away; dispose of.</dd>
+<dt>get the chance</dt><dd>have an opportunity to do something.</dd>
+<dt>get the impression</dt><dd>form an opinion or feeling based on what you notice.</dd>
+<dt>get the joke</dt><dd>understand why something is funny.</dd>
+<dt>get the wrong end of the stick</dt><dd>misunderstand what someone means or what has happened.</dd>
+<dt>get to know someone</dt><dd>gradually become familiar with someone.</dd>
+</dl></div>
+<div class="study-card"><h3>Idioms with <em>get</em></h3><dl>
+<dt>Get real!</dt><dd>Be sensible and recognise the facts; stop being unrealistic.</dd>
+<dt>Get a life!</dt><dd>Stop being boring or obsessing over something unimportant; do something more worthwhile.</dd>
+<dt>not get anywhere</dt><dd>make no progress.</dd>
+<dt>get on someone's nerves</dt><dd>annoy or irritate someone.</dd>
+<dt>get your act together</dt><dd>organise yourself and start behaving or working effectively.</dd>
+<dt>get on like a house on fire</dt><dd>like each other immediately and have a very good relationship.</dd>
+<dt>get a move on</dt><dd>hurry up.</dd>
+<dt>be getting on a bit</dt><dd>be rather old.</dd>
+<dt>get the message</dt><dd>understand what someone is trying to tell you, especially indirectly.</dd>
+<dt>get your own way</dt><dd>get what you want, often by persuading others.</dd>
+</dl></div>
+<div class="study-card"><h3>Phrasal verbs with <em>get</em></h3><dl>
+<dt>get together</dt><dd>start a romantic relationship; or meet socially, depending on context.</dd>
+<dt>get over something</dt><dd>recover from an illness, shock or emotional difficulty.</dd>
+<dt>get on with something</dt><dd>continue doing something, especially after a pause.</dd>
+<dt>get through to someone</dt><dd>make someone understand or accept what you are saying.</dd>
+<dt>get into something</dt><dd>enter or begin a career, profession or activity.</dd>
+<dt>get around</dt><dd>travel or move from place to place.</dd>
+<dt>get away with something</dt><dd>do something wrong without being caught or punished.</dd>
+<dt>get by</dt><dd>manage with the money, time or resources available.</dd>
+<dt>get behind</dt><dd>fail to make enough progress; fall behind schedule.</dd>
+<dt>get someone down</dt><dd>make someone feel unhappy or depressed.</dd>
+<dt>get out of something</dt><dd>avoid a responsibility or obligation.</dd>
+<dt>get back to someone</dt><dd>reply to someone by speaking or writing later.</dd>
+</dl></div>
+</div></section>
+
+<section class="activity" id="expressions-match" data-activity>
+<div class="activity-head"><div><span class="tag">Activity 2</span><h2>Expressions with <em>get</em>: match the meanings</h2><p class="intro">Choose the definition or synonym that best matches each expression.</p></div></div>
+<div class="questions two-col" id="em-questions">
+<div class="q"><label for="em0">1. get hold of someone</label><select id="em0" data-answer="manage to contact someone"><option value="">Choose an answer…</option><option value="manage to contact someone">manage to contact someone</option><option value="understand a joke">understand a joke</option><option value="take revenge on someone">take revenge on someone</option></select></div>
+<div class="q"><label for="em1">2. get into trouble with someone</label><select id="em1" data-answer="cause problems with a person or authority"><option value="">Choose an answer…</option><option value="cause problems with a person or authority">cause problems with a person or authority</option><option value="form an opinion from evidence">form an opinion from evidence</option><option value="become familiar with someone">become familiar with someone</option></select></div>
+<div class="q"><label for="em2">3. get out of the way</label><select id="em2" data-answer="move so that you are no longer blocking someone"><option value="">Choose an answer…</option><option value="dispose of something unwanted">dispose of something unwanted</option><option value="misunderstand a situation">misunderstand a situation</option><option value="move so that you are no longer blocking someone">move so that you are no longer blocking someone</option></select></div>
+<div class="q"><label for="em3">4. get your own back on someone</label><select id="em3" data-answer="take revenge on someone"><option value="">Choose an answer…</option><option value="take revenge on someone">take revenge on someone</option><option value="contact someone successfully">contact someone successfully</option><option value="have an opportunity">have an opportunity</option></select></div>
+<div class="q"><label for="em4">5. get rid of something</label><select id="em4" data-answer="dispose of or make something unwanted go away"><option value="">Choose an answer…</option><option value="understand why something is funny">understand why something is funny</option><option value="move out of someone&#x27;s path">move out of someone&#x27;s path</option><option value="dispose of or make something unwanted go away">dispose of or make something unwanted go away</option></select></div>
+<div class="q"><label for="em5">6. get the chance</label><select id="em5" data-answer="have an opportunity"><option value="">Choose an answer…</option><option value="have an opportunity">have an opportunity</option><option value="gradually become familiar with a person">gradually become familiar with a person</option><option value="misunderstand what someone means">misunderstand what someone means</option></select></div>
+<div class="q"><label for="em6">7. get the impression</label><select id="em6" data-answer="form an opinion or feeling based on what you notice"><option value="">Choose an answer…</option><option value="form an opinion or feeling based on what you notice">form an opinion or feeling based on what you notice</option><option value="contact someone">contact someone</option><option value="hurry up">hurry up</option></select></div>
+<div class="q"><label for="em7">8. get the joke</label><select id="em7" data-answer="understand why something is funny"><option value="">Choose an answer…</option><option value="take revenge">take revenge</option><option value="cause trouble">cause trouble</option><option value="understand why something is funny">understand why something is funny</option></select></div>
+<div class="q"><label for="em8">9. get the wrong end of the stick</label><select id="em8" data-answer="misunderstand what someone means or what has happened"><option value="">Choose an answer…</option><option value="make something unwanted go away">make something unwanted go away</option><option value="misunderstand what someone means or what has happened">misunderstand what someone means or what has happened</option><option value="get an opportunity">get an opportunity</option></select></div>
+<div class="q"><label for="em9">10. get to know someone</label><select id="em9" data-answer="gradually become familiar with someone"><option value="">Choose an answer…</option><option value="move out of the way">move out of the way</option><option value="contact someone urgently">contact someone urgently</option><option value="gradually become familiar with someone">gradually become familiar with someone</option></select></div>
+</div><div class="controls"><button class="check" type="button" onclick="checkActivity(this)">Check your answers</button><button class="reset" type="button" onclick="resetActivity(this)">Reset activity</button></div><div class="feedback" aria-live="polite"></div>
+</section>
+
+<section class="activity" id="expressions-context" data-activity>
+<div class="activity-head"><div><span class="tag">Activity 3</span><h2>Expressions with <em>get</em>: in context</h2><p class="intro">Complete each sentence with the correct expression. Select the best answer.</p></div></div>
+<div class="questions two-col" id="ec-questions">
+<div class="q"><label for="ec0">1. I’ve tried calling the head teacher twice, but I still haven’t managed to ____.</label><select id="ec0" data-answer="get hold of her"><option value="">Choose an answer…</option><option value="get the joke">get the joke</option><option value="get rid of her">get rid of her</option><option value="get hold of her">get hold of her</option></select></div>
+<div class="q"><label for="ec1">2. If you keep talking back to the coach, you’ll ____ him.</label><select id="ec1" data-answer="get into trouble with"><option value="">Choose an answer…</option><option value="get into trouble with">get into trouble with</option><option value="get the chance">get the chance</option><option value="get to know">get to know</option></select></div>
+<div class="q"><label for="ec2">3. Could you ____? I can’t see the screen.</label><select id="ec2" data-answer="get out of the way"><option value="">Choose an answer…</option><option value="get out of the way">get out of the way</option><option value="get the wrong end of the stick">get the wrong end of the stick</option><option value="get my own back">get my own back</option></select></div>
+<div class="q"><label for="ec3">4. He played a prank on me, so I’m planning to ____ him.</label><select id="ec3" data-answer="get my own back on"><option value="">Choose an answer…</option><option value="get the impression of">get the impression of</option><option value="get my own back on">get my own back on</option><option value="get hold of">get hold of</option></select></div>
+<div class="q"><label for="ec4">5. We need to ____ these broken chairs before the inspection.</label><select id="ec4" data-answer="get rid of"><option value="">Choose an answer…</option><option value="get to know">get to know</option><option value="get the chance of">get the chance of</option><option value="get rid of">get rid of</option></select></div>
+<div class="q"><label for="ec5">6. I never ____ to visit the exhibition while it was in town.</label><select id="ec5" data-answer="got the chance"><option value="">Choose an answer…</option><option value="got the chance">got the chance</option><option value="got hold">got hold</option><option value="got the joke">got the joke</option></select></div>
+<div class="q"><label for="ec6">7. From her tone, I ____ that she wasn’t particularly pleased.</label><select id="ec6" data-answer="got the impression"><option value="">Choose an answer…</option><option value="got the impression">got the impression</option><option value="got out of the way">got out of the way</option><option value="got my own back">got my own back</option></select></div>
+<div class="q"><label for="ec7">8. Everyone laughed, but I didn’t ____ until someone explained it.</label><select id="ec7" data-answer="get the joke"><option value="">Choose an answer…</option><option value="get into trouble">get into trouble</option><option value="get rid of">get rid of</option><option value="get the joke">get the joke</option></select></div>
+<div class="q"><label for="ec8">9. I think you’ve ____: I wasn’t criticising you; I was asking a question.</label><select id="ec8" data-answer="got the wrong end of the stick"><option value="">Choose an answer…</option><option value="got hold of">got hold of</option><option value="got the chance">got the chance</option><option value="got the wrong end of the stick">got the wrong end of the stick</option></select></div>
+<div class="q"><label for="ec9">10. It takes time to ____ your new colleagues properly.</label><select id="ec9" data-answer="get to know"><option value="">Choose an answer…</option><option value="get to know">get to know</option><option value="get out of the way">get out of the way</option><option value="get rid of">get rid of</option></select></div>
+</div><div class="controls"><button class="check" type="button" onclick="checkActivity(this)">Check your answers</button><button class="reset" type="button" onclick="resetActivity(this)">Reset activity</button></div><div class="feedback" aria-live="polite"></div>
+</section>
+
+<section class="activity" id="idioms-match" data-activity>
+<div class="activity-head"><div><span class="tag">Activity 4</span><h2>Idioms with <em>get</em>: match the meanings</h2><p class="intro">Choose the definition or synonym that best matches each idiom.</p></div></div>
+<div class="questions two-col" id="im-questions">
+<div class="q"><label for="im0">1. Get real!</label><select id="im0" data-answer="Be sensible and recognise the facts"><option value="">Choose an answer…</option><option value="Like someone immediately">Like someone immediately</option><option value="Be sensible and recognise the facts">Be sensible and recognise the facts</option><option value="Hurry up">Hurry up</option></select></div>
+<div class="q"><label for="im1">2. Get a life!</label><select id="im1" data-answer="Stop obsessing over something trivial and do something worthwhile"><option value="">Choose an answer…</option><option value="Understand an indirect message">Understand an indirect message</option><option value="Be rather old">Be rather old</option><option value="Stop obsessing over something trivial and do something worthwhile">Stop obsessing over something trivial and do something worthwhile</option></select></div>
+<div class="q"><label for="im2">3. not get anywhere</label><select id="im2" data-answer="make no progress"><option value="">Choose an answer…</option><option value="annoy someone">annoy someone</option><option value="get what you want">get what you want</option><option value="make no progress">make no progress</option></select></div>
+<div class="q"><label for="im3">4. get on someone&#x27;s nerves</label><select id="im3" data-answer="irritate or annoy someone"><option value="">Choose an answer…</option><option value="irritate or annoy someone">irritate or annoy someone</option><option value="organise yourself effectively">organise yourself effectively</option><option value="make no progress">make no progress</option></select></div>
+<div class="q"><label for="im4">5. get your act together</label><select id="im4" data-answer="organise yourself and behave or work effectively"><option value="">Choose an answer…</option><option value="organise yourself and behave or work effectively">organise yourself and behave or work effectively</option><option value="take revenge">take revenge</option><option value="become friends immediately">become friends immediately</option></select></div>
+<div class="q"><label for="im5">6. get on like a house on fire</label><select id="im5" data-answer="like each other immediately and get along extremely well"><option value="">Choose an answer…</option><option value="argue constantly">argue constantly</option><option value="like each other immediately and get along extremely well">like each other immediately and get along extremely well</option><option value="make no progress">make no progress</option></select></div>
+<div class="q"><label for="im6">7. get a move on</label><select id="im6" data-answer="hurry up"><option value="">Choose an answer…</option><option value="hurry up">hurry up</option><option value="get what you want">get what you want</option><option value="stop being unrealistic">stop being unrealistic</option></select></div>
+<div class="q"><label for="im7">8. be getting on a bit</label><select id="im7" data-answer="be rather old"><option value="">Choose an answer…</option><option value="be very organised">be very organised</option><option value="become familiar with someone">become familiar with someone</option><option value="be rather old">be rather old</option></select></div>
+<div class="q"><label for="im8">9. get the message</label><select id="im8" data-answer="understand what someone is trying to communicate"><option value="">Choose an answer…</option><option value="make someone feel depressed">make someone feel depressed</option><option value="get a career">get a career</option><option value="understand what someone is trying to communicate">understand what someone is trying to communicate</option></select></div>
+<div class="q"><label for="im9">10. get your own way</label><select id="im9" data-answer="get what you want, often by persuading others"><option value="">Choose an answer…</option><option value="understand a joke">understand a joke</option><option value="get what you want, often by persuading others">get what you want, often by persuading others</option><option value="move from place to place">move from place to place</option></select></div>
+</div><div class="controls"><button class="check" type="button" onclick="checkActivity(this)">Check your answers</button><button class="reset" type="button" onclick="resetActivity(this)">Reset activity</button></div><div class="feedback" aria-live="polite"></div>
+</section>
+
+<section class="activity" id="idioms-context" data-activity>
+<div class="activity-head"><div><span class="tag">Activity 5</span><h2>Idioms with <em>get</em>: in context</h2><p class="intro">Choose the idiom that completes each sentence naturally.</p></div></div>
+<div class="questions two-col" id="ic-questions">
+<div class="q"><label for="ic0">1. You’ve spent three hours arguing with a parking app. Honestly, ____!</label><select id="ic0" data-answer="get a life"><option value="">Choose an answer…</option><option value="get the message">get the message</option><option value="get a move on">get a move on</option><option value="get a life">get a life</option></select></div>
+<div class="q"><label for="ic1">2. I’ve explained the instructions five times, but I’m not ____ with him.</label><select id="ic1" data-answer="getting anywhere"><option value="">Choose an answer…</option><option value="getting anywhere">getting anywhere</option><option value="getting on like a house on fire">getting on like a house on fire</option><option value="getting his own way">getting his own way</option></select></div>
+<div class="q"><label for="ic2">3. That constant tapping is really ____. Could you stop?</label><select id="ic2" data-answer="getting on my nerves"><option value="">Choose an answer…</option><option value="getting on a bit">getting on a bit</option><option value="getting on my nerves">getting on my nerves</option><option value="getting my act together">getting my act together</option></select></div>
+<div class="q"><label for="ic3">4. You need to ____ and submit the assignment before the deadline.</label><select id="ic3" data-answer="get your act together"><option value="">Choose an answer…</option><option value="get a life">get a life</option><option value="get your act together">get your act together</option><option value="get your own way">get your own way</option></select></div>
+<div class="q"><label for="ic4">5. Maya and her new flatmate ____; they’ve been talking non-stop since they met.</label><select id="ic4" data-answer="get on like a house on fire"><option value="">Choose an answer…</option><option value="get on like a house on fire">get on like a house on fire</option><option value="get a move on">get a move on</option><option value="get the message">get the message</option></select></div>
+<div class="q"><label for="ic5">6. We’re going to be late, so ____!</label><select id="ic5" data-answer="get a move on"><option value="">Choose an answer…</option><option value="get your own way">get your own way</option><option value="get a move on">get a move on</option><option value="get real">get real</option></select></div>
+<div class="q"><label for="ic6">7. My uncle is ____ now, but he still goes hiking every weekend.</label><select id="ic6" data-answer="getting on a bit"><option value="">Choose an answer…</option><option value="getting on a bit">getting on a bit</option><option value="getting the message">getting the message</option><option value="getting anywhere">getting anywhere</option></select></div>
+<div class="q"><label for="ic7">8. I’ve hinted that the music is too loud, but he just doesn’t ____.</label><select id="ic7" data-answer="get the message"><option value="">Choose an answer…</option><option value="get his act together">get his act together</option><option value="get a life">get a life</option><option value="get the message">get the message</option></select></div>
+<div class="q"><label for="ic8">9. Stop expecting everyone to agree with you. You can’t always ____.</label><select id="ic8" data-answer="get your own way"><option value="">Choose an answer…</option><option value="get anywhere">get anywhere</option><option value="get on my nerves">get on my nerves</option><option value="get your own way">get your own way</option></select></div>
+<div class="q"><label for="ic9">10. Oh, come on! You think you can finish the whole project in ten minutes? ____.</label><select id="ic9" data-answer="Get real"><option value="">Choose an answer…</option><option value="Get real">Get real</option><option value="Get a move on">Get a move on</option><option value="Get the message">Get the message</option></select></div>
+</div><div class="controls"><button class="check" type="button" onclick="checkActivity(this)">Check your answers</button><button class="reset" type="button" onclick="resetActivity(this)">Reset activity</button></div><div class="feedback" aria-live="polite"></div>
+</section>
+
+<section class="activity" id="phrasal-match" data-activity>
+<div class="activity-head"><div><span class="tag">Activity 6</span><h2>Phrasal verbs with <em>get</em>: match the meanings</h2><p class="intro">Choose the definition that best matches each phrasal verb in the given sense.</p></div></div>
+<div class="questions two-col" id="pm-questions">
+<div class="q"><label for="pm0">1. get together</label><select id="pm0" data-answer="start a romantic relationship or meet socially"><option value="">Choose an answer…</option><option value="start a romantic relationship or meet socially">start a romantic relationship or meet socially</option><option value="recover from an illness or difficulty">recover from an illness or difficulty</option><option value="avoid a responsibility">avoid a responsibility</option></select></div>
+<div class="q"><label for="pm1">2. get over something</label><select id="pm1" data-answer="recover from an illness, shock or emotional difficulty"><option value="">Choose an answer…</option><option value="continue doing something">continue doing something</option><option value="reply to someone later">reply to someone later</option><option value="recover from an illness, shock or emotional difficulty">recover from an illness, shock or emotional difficulty</option></select></div>
+<div class="q"><label for="pm2">3. get on with something</label><select id="pm2" data-answer="continue doing something"><option value="">Choose an answer…</option><option value="move from place to place">move from place to place</option><option value="continue doing something">continue doing something</option><option value="start a profession">start a profession</option></select></div>
+<div class="q"><label for="pm3">4. get through to someone</label><select id="pm3" data-answer="make someone understand what you are saying"><option value="">Choose an answer…</option><option value="manage with limited resources">manage with limited resources</option><option value="fall behind schedule">fall behind schedule</option><option value="make someone understand what you are saying">make someone understand what you are saying</option></select></div>
+<div class="q"><label for="pm4">5. get into a profession</label><select id="pm4" data-answer="begin a career or profession"><option value="">Choose an answer…</option><option value="begin a career or profession">begin a career or profession</option><option value="make someone feel depressed">make someone feel depressed</option><option value="get away without being caught">get away without being caught</option></select></div>
+<div class="q"><label for="pm5">6. get around</label><select id="pm5" data-answer="move or travel from place to place"><option value="">Choose an answer…</option><option value="recover from a break-up">recover from a break-up</option><option value="respond in writing">respond in writing</option><option value="move or travel from place to place">move or travel from place to place</option></select></div>
+<div class="q"><label for="pm6">7. get away with something</label><select id="pm6" data-answer="do something wrong without being caught or punished"><option value="">Choose an answer…</option><option value="manage with what you have">manage with what you have</option><option value="do something wrong without being caught or punished">do something wrong without being caught or punished</option><option value="start a relationship">start a relationship</option></select></div>
+<div class="q"><label for="pm7">8. get by</label><select id="pm7" data-answer="manage with the money or resources available"><option value="">Choose an answer…</option><option value="continue doing a task">continue doing a task</option><option value="manage with the money or resources available">manage with the money or resources available</option><option value="make no progress">make no progress</option></select></div>
+<div class="q"><label for="pm8">9. get behind</label><select id="pm8" data-answer="fail to make enough progress or fall behind schedule"><option value="">Choose an answer…</option><option value="make someone understand">make someone understand</option><option value="avoid a responsibility">avoid a responsibility</option><option value="fail to make enough progress or fall behind schedule">fail to make enough progress or fall behind schedule</option></select></div>
+<div class="q"><label for="pm9">10. get someone down</label><select id="pm9" data-answer="make someone feel unhappy or depressed"><option value="">Choose an answer…</option><option value="make someone feel unhappy or depressed">make someone feel unhappy or depressed</option><option value="reply to a message">reply to a message</option><option value="recover from an illness">recover from an illness</option></select></div>
+<div class="q"><label for="pm10">11. get out of something</label><select id="pm10" data-answer="avoid a responsibility or obligation"><option value="">Choose an answer…</option><option value="meet socially">meet socially</option><option value="avoid a responsibility or obligation">avoid a responsibility or obligation</option><option value="start a profession">start a profession</option></select></div>
+<div class="q"><label for="pm11">12. get back to someone</label><select id="pm11" data-answer="reply to someone by speaking or writing later"><option value="">Choose an answer…</option><option value="get revenge">get revenge</option><option value="travel around a city">travel around a city</option><option value="reply to someone by speaking or writing later">reply to someone by speaking or writing later</option></select></div>
+</div><div class="controls"><button class="check" type="button" onclick="checkActivity(this)">Check your answers</button><button class="reset" type="button" onclick="resetActivity(this)">Reset activity</button></div><div class="feedback" aria-live="polite"></div>
+</section>
+
+<section class="activity" id="phrasal-context" data-activity>
+<div class="activity-head"><div><span class="tag">Activity 7</span><h2>Phrasal verbs with <em>get</em>: in context</h2><p class="intro">Choose the phrasal verb that completes each sentence. Pay attention to grammar and meaning.</p></div></div>
+<div class="questions two-col" id="pc-questions">
+<div class="q"><label for="pc0">1. They met at university and started to ____ a few months later.</label><select id="pc0" data-answer="get together"><option value="">Choose an answer…</option><option value="get by">get by</option><option value="get together">get together</option><option value="get over">get over</option></select></div>
+<div class="q"><label for="pc1">2. It took him nearly a year to ____ the break-up.</label><select id="pc1" data-answer="get over"><option value="">Choose an answer…</option><option value="get around">get around</option><option value="get behind">get behind</option><option value="get over">get over</option></select></div>
+<div class="q"><label for="pc2">3. We’ve talked long enough. Let’s ____ with the work.</label><select id="pc2" data-answer="get on"><option value="">Choose an answer…</option><option value="get on">get on</option><option value="get away">get away</option><option value="get back">get back</option></select></div>
+<div class="q"><label for="pc3">4. I’ve tried explaining the risks, but I can’t ____ to him.</label><select id="pc3" data-answer="get through"><option value="">Choose an answer…</option><option value="get over">get over</option><option value="get by">get by</option><option value="get through">get through</option></select></div>
+<div class="q"><label for="pc4">5. After studying biology, she hopes to ____ medicine.</label><select id="pc4" data-answer="get into"><option value="">Choose an answer…</option><option value="get into">get into</option><option value="get around">get around</option><option value="get out of">get out of</option></select></div>
+<div class="q"><label for="pc5">6. What’s the easiest way to ____ London without a car?</label><select id="pc5" data-answer="get around"><option value="">Choose an answer…</option><option value="get around">get around</option><option value="get over">get over</option><option value="get through">get through</option></select></div>
+<div class="q"><label for="pc6">7. He copied the essay and thought he would ____ it.</label><select id="pc6" data-answer="get away with"><option value="">Choose an answer…</option><option value="get away with">get away with</option><option value="get back to">get back to</option><option value="get on with">get on with</option></select></div>
+<div class="q"><label for="pc7">8. Money is tight, but we can ____ until payday.</label><select id="pc7" data-answer="get by"><option value="">Choose an answer…</option><option value="get by">get by</option><option value="get together">get together</option><option value="get into">get into</option></select></div>
+<div class="q"><label for="pc8">9. I’m worried we’re starting to ____ with the project.</label><select id="pc8" data-answer="get behind"><option value="">Choose an answer…</option><option value="get away">get away</option><option value="get behind">get behind</option><option value="get over">get over</option></select></div>
+<div class="q"><label for="pc9">10. This gloomy weather really ____.</label><select id="pc9" data-answer="gets me down"><option value="">Choose an answer…</option><option value="gets me down">gets me down</option><option value="gets me through to">gets me through to</option><option value="gets me by">gets me by</option></select></div>
+<div class="q"><label for="pc10">11. He tried to ____ attending the meeting by claiming he was ill.</label><select id="pc10" data-answer="get out of"><option value="">Choose an answer…</option><option value="get out of">get out of</option><option value="get back to">get back to</option><option value="get into">get into</option></select></div>
+<div class="q"><label for="pc11">12. I’ll check the timetable and ____ you tomorrow.</label><select id="pc11" data-answer="get back to"><option value="">Choose an answer…</option><option value="get back to">get back to</option><option value="get together">get together</option><option value="get over">get over</option></select></div>
+</div><div class="controls"><button class="check" type="button" onclick="checkActivity(this)">Check your answers</button><button class="reset" type="button" onclick="resetActivity(this)">Reset activity</button></div><div class="feedback" aria-live="polite"></div>
+</section>
+</main>
+<footer>English Vocabulary · C1 practice · All activities can be checked and reset independently.</footer>
+<script>
+function checkActivity(button) {
+  var activity = button.closest('[data-activity]');
+  if (!activity) return;
+  var selects = Array.prototype.slice.call(activity.querySelectorAll('select'));
+  var feedback = activity.querySelector('.feedback');
+  var answered = 0;
+  var correct = 0;
+
+  selects.forEach(function(select) {
+    select.style.borderColor = '#aebdb2';
+    select.style.backgroundColor = '#fff';
+
+    if (select.value !== '') {
+      answered += 1;
+      if (select.value === select.getAttribute('data-answer')) {
+        correct += 1;
+        select.style.borderColor = '#21834a';
+        select.style.backgroundColor = '#effaf2';
+      } else {
+        select.style.borderColor = '#c74338';
+        select.style.backgroundColor = '#fff1f0';
+      }
+    }
+  });
+
+  feedback.className = 'feedback show ' +
+    (correct === selects.length ? 'good' : (correct > 0 ? 'partial' : 'bad'));
+
+  if (answered < selects.length) {
+    feedback.textContent = 'You answered ' + answered + ' out of ' + selects.length +
+      '. Score: ' + correct + '/' + selects.length +
+      '. Complete the unanswered items and check again.';
+  } else {
+    var comment = correct === selects.length ? 'Excellent work!' :
+      (correct >= selects.length * 0.7 ?
+       'Good work. Review the highlighted answers and try again.' :
+       'Review the study bank and try again.');
+    feedback.textContent = 'Your score: ' + correct + '/' + selects.length + '. ' + comment;
+  }
+}
+
+function resetActivity(button) {
+  var activity = button.closest('[data-activity]');
+  if (!activity) return;
+
+  activity.querySelectorAll('select').forEach(function(select) {
+    select.selectedIndex = 0;
+    select.style.borderColor = '#aebdb2';
+    select.style.backgroundColor = '#fff';
+  });
+
+  var feedback = activity.querySelector('.feedback');
+  feedback.className = 'feedback';
+  feedback.textContent = '';
+}
+</script>
+</body>
+</html>
